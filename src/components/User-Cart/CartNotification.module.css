@@ -1,0 +1,25 @@
+.notification::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-style: solid;
+  border-width: 18px 24px;
+  border-color: transparent transparent white transparent;
+  top: -28px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.cart-icon:hover .notification {
+  display: block;
+  animation: fadeIn ease-in 0.2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
